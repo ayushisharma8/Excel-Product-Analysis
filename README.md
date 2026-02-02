@@ -1,116 +1,114 @@
 # Excel-Product-Analysis
 
-📊 Retail Sales Analysis & Forecasting (Excel)
+### 📊 Retail Sales Analysis & Forecasting (Excel)
 
-Objective
+**Objective**
 Analyzed battery product sales across multiple retailers in Mexico to identify high-performing channels, product trends, seasonal patterns, and growth opportunities. The project focused on data cleaning, transformation, analysis, and actionable business recommendations.
 
-🔧 Tools & Skills Used
+---
 
-Excel (VLOOKUP, DATE functions, Pivot Tables, Pivot Charts)
+## 🔧 Tools & Skills Used
 
-Data Cleaning & Preparation
+* **Excel** (VLOOKUP, DATE functions, Pivot Tables, Pivot Charts)
+* **Data Cleaning & Preparation**
+* **Sales Analysis & Forecasting**
+* **Business Insights & Reporting**
 
-Sales Analysis & Forecasting
+---
 
-Business Insights & Reporting
+## 🧹 Data Cleaning & Preparation
 
-🧹 Data Cleaning & Preparation
-Dataset Overview
+### Dataset Overview
 
-Main Data Sheet: Country, Distributor, Month, Distributor Product Code, Product Name, Retailer No, Retailer Name, Items, Sales (LC), Sales (USD)
+* **Main Data Sheet:** Country, Distributor, Month, Distributor Product Code, Product Name, Retailer No, Retailer Name, Items, Sales (LC), Sales (USD)
+* **Lookup Tables:**
 
-Lookup Tables:
+  * *Retailer Lookup:* Retailer No, Retailer Name, SubCanal
+  * *Product Lookup:* Distributor Product Code, Product Name
+* **Primary Keys:** Retailer No and Distributor Product Code
 
-Retailer Lookup: Retailer No, Retailer Name, SubCanal
+### Cleaning Steps Performed
 
-Product Lookup: Distributor Product Code, Product Name
+1. **Duplicate Check**
 
-Primary Keys: Retailer No and Distributor Product Code
+   * Verified duplicate records across distributor, product, retailer, and month (no duplicates found).
 
-Cleaning Steps Performed
+2. **Missing & Inconsistent Data Handling**
 
-Duplicate Check
+   * Filled missing Product Names and Retailer Names using lookup tables.
+   * Used VLOOKUP to ensure accurate mapping.
 
-Verified duplicate records across distributor, product, retailer, and month (no duplicates found).
+3. **Date Standardization**
 
-Missing & Inconsistent Data Handling
+   * Converted Month column from text to date format for time-series analysis.
 
-Filled missing Product Names and Retailer Names using lookup tables.
+4. **Derived Metrics**
 
-Used VLOOKUP to ensure accurate mapping.
+   * Created new columns:
 
-Date Standardization
+     * Volume Sales (LC)
+     * Volume Sales (USD)
 
-Converted Month column from text to date format for time-series analysis.
+5. **Data Consistency Checks**
 
-Derived Metrics
+   * Identified and removed records with zero values in Items, Sales (LC), and Sales (USD).
 
-Created new columns:
+6. **Currency Conversion**
 
-Volume Sales (LC)
+   * Converted sales from MXN to USD using a fixed exchange rate (1 MXN = 0.049 USD).
 
-Volume Sales (USD)
+7. **Prepared Clean Dataset**
 
-Data Consistency Checks
+   * Final dataset used for pivot analysis, charts, and sales forecasting.
 
-Identified and removed records with zero values in Items, Sales (LC), and Sales (USD).
+---
 
-Currency Conversion
+## 📈 Key Insights
 
-Converted sales from MXN to USD using a fixed exchange rate (1 MXN = 0.049 USD).
+### Channel & Retailer Performance
 
-Prepared Clean Dataset
+* **CORPORACION FAVORITA C.A.** contributed **46.8% of total sales**, making it the top retailer.
+* **AUTOSERVICIO Sub-Canal** emerged as the strongest channel, contributing **46.7% of total sales**.
+* **2023 recorded the highest sales** over the last six years.
+* **November and December** accounted for **21.3% of total sales**, showing strong seasonality.
 
-Final dataset used for pivot analysis, charts, and sales forecasting.
+### Product Performance
 
-📈 Key Insights
-Channel & Retailer Performance
+* **Tesla Battery AA BLISTER X4 X12 X4 (SENSOR)** generated **13% of total sales**, making it the top product.
+* **LIBRETA – BOLÍGRAFO – BatteryS Tesla** showed low sales, likely due to a recent launch in 2024.
+* Sales fluctuations observed in 2021 and 2024 indicated possible stock, pricing, or demand changes.
 
-CORPORACION FAVORITA C.A. contributed 46.8% of total sales, making it the top retailer.
+---
 
-AUTOSERVICIO Sub-Canal emerged as the strongest channel, contributing 46.7% of total sales.
+## 🚀 Business Opportunities
 
-2023 recorded the highest sales over the last six years.
+* Expand investment in **AUTOSERVICIO** channel through promotions and retailer incentives.
+* Strengthen **online sales channels** to leverage growing e-commerce demand.
+* Increase **seasonal marketing and inventory planning** for November–December peak period.
 
-November and December accounted for 21.3% of total sales, showing strong seasonality.
+---
 
-Product Performance
+## ⚠️ Risks & Concerns
 
-Tesla Battery AA BLISTER X4 X12 X4 (SENSOR) generated 13% of total sales, making it the top product.
+* Low performance of newly launched products.
+* Sales volatility for top-performing products indicating demand or supply challenges.
 
-LIBRETA – BOLÍGRAFO – BatteryS Tesla showed low sales, likely due to a recent launch in 2024.
+---
 
-Sales fluctuations observed in 2021 and 2024 indicated possible stock, pricing, or demand changes.
+## 📌 Recommendations
 
-🚀 Business Opportunities
+* Reallocate marketing budgets toward high-performing channels.
+* Improve launch strategies for underperforming products.
+* Use forecast trends to optimize inventory and promotions.
+* Introduce complementary products for best-selling batteries.
+* Continuously monitor sales forecasts and adjust strategy accordingly.
 
-Expand investment in AUTOSERVICIO channel through promotions and retailer incentives.
+---
 
-Strengthen online sales channels to leverage growing e-commerce demand.
+## 📉 Forecast Summary
 
-Increase seasonal marketing and inventory planning for November–December peak period.
+* Forecast indicates **steady sales growth over the next 6 months**.
+* Inventory and marketing plans should align with expected demand trends.
 
-⚠️ Risks & Concerns
 
-Low performance of newly launched products.
 
-Sales volatility for top-performing products indicating demand or supply challenges.
-
-📌 Recommendations
-
-Reallocate marketing budgets toward high-performing channels.
-
-Improve launch strategies for underperforming products.
-
-Use forecast trends to optimize inventory and promotions.
-
-Introduce complementary products for best-selling batteries.
-
-Continuously monitor sales forecasts and adjust strategy accordingly.
-
-📉 Forecast Summary
-
-Forecast indicates steady sales growth over the next 6 months.
-
-Inventory and marketing plans should align with expected demand trends.
